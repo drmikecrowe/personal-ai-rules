@@ -53,7 +53,7 @@ To use these rules with the agent-rules-mcp server, configure your MCP client:
 Some rules should be applied in every interaction. Start each session with:
 
 ```
-@get_rules core-principles,code-review-process,problem-solving-heuristics,transparency-standards,ai-collaboration-protocol,silent-execution-protocol,documentation-workflow,testing-principles
+@get_rules core-principles,code-review-process,problem-solving-heuristics,transparency-standards,ai-collaboration-protocol,silent-execution-protocol,documentation-workflow,testing-principles,clean-code
 ```
 
 ### Potential Rules
@@ -67,7 +67,7 @@ Special-purpose rules that require explicit activation:
 ```
 
 ### Rule Hierarchy
-1. **Core Principles** - Always apply (8 fundamental rules)
+1. **Core Principles** - Always apply (9 fundamental rules)
 2. **Potential Rules** - Apply when specific capabilities needed (security-first, tasksync-feedback)
 3. **Domain Rules** - Apply based on technology (react-*, typescript-*, etc.)
 4. **Project Rules** - Apply for specific project contexts

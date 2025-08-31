@@ -23,12 +23,15 @@ These principles must be applied in every interaction, regardless of the specifi
 ### 🧪 **Testing** (MANDATORY)
 7. **`@get_rules testing-principles`** - Permanent tests only, no temporary scripts
 
+### 🧹 **Code Quality** (MANDATORY)
+8. **`@get_rules clean-code`** - Clean code principles for maintainable, readable code
+
 ## Usage Instructions
 
 ### For AI Assistants
 **ALWAYS retrieve and apply these core rules first**:
 ```
-@get_rules core-principles,code-review-process,problem-solving-heuristics,transparency-standards,ai-collaboration-protocol,silent-execution-protocol,documentation-workflow,testing-principles
+@get_rules core-principles,code-review-process,problem-solving-heuristics,transparency-standards,ai-collaboration-protocol,silent-execution-protocol,documentation-workflow,testing-principles,clean-code
 ```
 
 ### Rule Hierarchy
