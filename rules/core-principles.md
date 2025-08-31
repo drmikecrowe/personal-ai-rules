@@ -15,19 +15,20 @@ These principles must be applied in every interaction, regardless of the specifi
 
 ### 🤖 **AI Collaboration** (MANDATORY)
 4. **`@get_rules ai-collaboration-protocol`** - Expert-level interaction standards and escalation
+5. **`@get_rules silent-execution-protocol`** - Efficient communication, silent work, concise summaries
 
 ### 📚 **Documentation** (MANDATORY)
-5. **`@get_rules documentation-workflow`** - Proactive knowledge capture and memory bank authority
+6. **`@get_rules documentation-workflow`** - Proactive knowledge capture and memory bank authority
 
 ### 🧪 **Testing** (MANDATORY)
-6. **`@get_rules testing-principles`** - Permanent tests only, no temporary scripts
+7. **`@get_rules testing-principles`** - Permanent tests only, no temporary scripts
 
 ## Usage Instructions
 
 ### For AI Assistants
 **ALWAYS retrieve and apply these core rules first**:
 ```
-@get_rules core-principles,code-review-process,problem-solving-heuristics,transparency-standards,ai-collaboration-protocol,documentation-workflow,testing-principles
+@get_rules core-principles,code-review-process,problem-solving-heuristics,transparency-standards,ai-collaboration-protocol,silent-execution-protocol,documentation-workflow,testing-principles
 ```
 
 ### Rule Hierarchy

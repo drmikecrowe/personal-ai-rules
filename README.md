@@ -53,7 +53,7 @@ To use these rules with the agent-rules-mcp server, configure your MCP client:
 Some rules should be applied in every interaction. Start each session with:
 
 ```
-@get_rules core-principles,code-review-process,problem-solving-heuristics,transparency-standards,ai-collaboration-protocol,documentation-workflow,testing-principles
+@get_rules core-principles,code-review-process,problem-solving-heuristics,transparency-standards,ai-collaboration-protocol,silent-execution-protocol,documentation-workflow,testing-principles
 ```
 
 ### Rule Hierarchy
