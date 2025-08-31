@@ -56,20 +56,45 @@ Some rules should be applied in every interaction. Start each session with:
 @get_rules core-principles,code-review-process,problem-solving-heuristics,transparency-standards,ai-collaboration-protocol,silent-execution-protocol,documentation-workflow,testing-principles
 ```
 
-### Rule Hierarchy
-1. **Core Principles** - Always apply (6 fundamental rules)
-2. **Domain Rules** - Apply based on technology (react-*, typescript-*, etc.)
-3. **Project Rules** - Apply for specific project contexts
+### Potential Rules
+Special-purpose rules that require explicit activation:
 
-### Usage Pattern
 ```
-# 1. Get core principles (always)
-@get_rules core-principles
+@get_rules security-first         # 🔒 OWASP security guidelines
+@get_rules tasksync-feedback      # 🔄 Continuous feedback loops
+@get_rules security-first,tasksync-feedback  # Both together
+```
 
-# 2. Get domain-specific rules (as needed)
-@get_rules react-component-design,typescript-best-practices
+### Rule Hierarchy
+1. **Core Principles** - Always apply (8 fundamental rules)
+2. **Potential Rules** - Apply when specific capabilities needed (security-first, tasksync-feedback)
+3. **Domain Rules** - Apply based on technology (react-*, typescript-*, etc.)
+4. **Project Rules** - Apply for specific project contexts
 
-# 3. Follow the established patterns
+## Usage Examples
+
+### Standard Development Session
+```bash
+# Core principles + domain rules
+@get_rules core-principles,react-component-design,typescript-best-practices
+```
+
+### Security-Critical Development
+```bash
+# Core + security for auth/API work
+@get_rules core-principles,security-first,amplify-backend-implementation,typescript-best-practices
+```
+
+### Collaborative Development Session
+```bash
+# Core + continuous feedback for iterative work
+@get_rules core-principles,tasksync-feedback,effect-core-principles,react-component-design
+```
+
+### Maximum Coverage Session
+```bash
+# Everything: core + potential + domain
+@get_rules core-principles,security-first,tasksync-feedback,react-component-design,typescript-best-practices
 ```
 
 ## Contributing to This Repository
