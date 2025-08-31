@@ -62,7 +62,8 @@ Special-purpose rules that require explicit activation:
 ```
 @get_rules security-first         # 🔒 OWASP security guidelines
 @get_rules tasksync-feedback      # 🔄 Continuous feedback loops
-@get_rules security-first,tasksync-feedback  # Both together
+@get_rules performance-optimization # 🐐 Performance optimization best practices
+@get_rules security-first,performance-optimization  # Multiple together
 ```
 
 ### Rule Hierarchy
@@ -91,10 +92,16 @@ Special-purpose rules that require explicit activation:
 @get_rules core-principles,tasksync-feedback,effect-core-principles,react-component-design
 ```
 
+### Performance-Focused Development
+```bash
+# Core + performance for optimization work
+@get_rules core-principles,performance-optimization,react-performance-optimization,typescript-best-practices
+```
+
 ### Maximum Coverage Session
 ```bash
 # Everything: core + potential + domain
-@get_rules core-principles,security-first,tasksync-feedback,react-component-design,typescript-best-practices
+@get_rules core-principles,security-first,performance-optimization,tasksync-feedback,react-component-design,typescript-best-practices
 ```
 
 ## Contributing to This Repository
