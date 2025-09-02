@@ -7,6 +7,10 @@
 
 ## Core Problem-Solving Rules
 
+### Development Servers, Build Scripts and Automation Guidelines
+
+- **MUST** stop and ask permission before compiling or starting any development server unless specifically instructed to do so
+
 ### Three Strike Rule
 
 **After 3 failed attempts** at fixing an issue, stop and question the entire architectural approach.
@@ -67,6 +71,6 @@
 For issues surpassing the three strike rule or complexity threshold:
 
 - Create detailed log files in `./ai-debugging-log/{Problem}_{TROUBLESHOOTING/RESEARCH}_LOG.md`
-- Document each attempt with clear numbering and results  
+- Document each attempt with clear numbering and results
 - Track what works, what doesn't, and final solutions
 - Help avoid repeating failed attempts in the future

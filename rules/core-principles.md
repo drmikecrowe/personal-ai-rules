@@ -54,8 +54,8 @@ These principles must be applied in every interaction, regardless of the specifi
 
 ## Quick Reference
 
-- **Before any code changes**: Apply code-review-process
-- **When encountering problems**: Apply problem-solving-heuristics  
+- **After any major code changes**: Apply code-review-process
+- **When encountering problems**: Apply problem-solving-heuristics
 - **When uncertain**: Apply transparency-standards
 - **For all interactions**: Apply ai-collaboration-protocol
 - **After resolving issues**: Apply documentation-workflow
