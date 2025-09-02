@@ -1,14 +1,17 @@
-# Code Review Process
-- Last Updated: 2025-08-30
-- Description: Internal code review protocols using expert consultation for quality assurance
-- Tags: code-review, quality, pragmatic-programmer, clean-code
-- Version: 1.0
+---
+title: Code Review Process
+last_updated: 2025-08-30
+description: Internal code review protocols using expert consultation for quality assurance
+tags: code-review, quality, pragmatic-programmer, clean-code
+version: 1.0
+---
 
 ## Internal Code Review Protocol
 
 **MANDATORY REASONING PROCESS**: Before making ANY code changes, conduct an internal round table discussion with:
+
 - **David Thomas** (The Pragmatic Programmer)
-- **Andrew Hunt** (The Pragmatic Programmer) 
+- **Andrew Hunt** (The Pragmatic Programmer)
 - **Uncle Bob** (Clean Code)
 
 If they would approve, proceed. If not, iterate on the plan until they would approve.
@@ -30,6 +33,7 @@ If uncertain, refactor before presenting the solution.
 ## Review Checklist
 
 Before finalizing any code:
+
 1. Does it solve the actual problem efficiently?
 2. Is it readable without comments explaining what it does?
 3. Are the naming conventions clear and descriptive?
@@ -40,6 +44,7 @@ Before finalizing any code:
 ## Failure Recovery
 
 If the internal review fails:
+
 - **Identify the specific concern** (clarity, complexity, maintainability)
 - **Refactor systematically** to address the concern
 - **Re-evaluate** with the same standards

@@ -9,6 +9,7 @@ With agent-rules-mcp, rules are retrieved on-demand, but some rules (like code r
 ## Solution: Core Principles System
 
 ### 1. Core Principles File
+
 - `rules/core-principles.md` defines which rules are mandatory
 - Lists the 6 essential rules that must always be applied
 - Provides clear usage instructions for AI assistants
@@ -16,6 +17,7 @@ With agent-rules-mcp, rules are retrieved on-demand, but some rules (like code r
 ### 2. Implementation Strategies
 
 #### Strategy A: Session Initialization (Recommended)
+
 **At the start of every coding session**, instruct the AI to retrieve core rules:
 
 ```
@@ -24,6 +26,7 @@ Before we begin, please retrieve and apply the core principles:
 ```
 
 #### Strategy B: Project-Level Instructions
+
 **In project README or .cursorrules files**, include:
 
 ```markdown
@@ -35,6 +38,7 @@ Then apply relevant domain rules based on the task.
 ```
 
 #### Strategy C: Custom Prompt Templates
+
 **Create reusable prompts** that include core rule retrieval:
 
 ```
@@ -65,6 +69,7 @@ Then apply relevant domain rules based on the task.
 ## Usage Examples
 
 ### Example 1: React Development Task
+
 ```
 @get_rules core-principles,react-component-design,typescript-best-practices
 
@@ -72,6 +77,7 @@ Please create a new React component following our standards.
 ```
 
 ### Example 2: Debugging Session
+
 ```
 @get_rules core-principles,problem-solving-heuristics,debugging-methodology
 
@@ -79,6 +85,7 @@ I'm having an issue with X. Let's troubleshoot this systematically.
 ```
 
 ### Example 3: Architecture Review
+
 ```
 @get_rules core-principles,architecture-patterns,code-review-process
 
@@ -88,6 +95,7 @@ Please review this architectural approach and provide feedback.
 ## MCP Client Configuration
 
 ### Option 1: Multiple MCP Servers
+
 Configure separate MCP servers for core vs. domain rules:
 
 ```json
@@ -108,6 +116,7 @@ Configure separate MCP servers for core vs. domain rules:
 ```
 
 ### Option 2: Custom Automation
+
 Create scripts that automatically prepend core rule retrieval to requests.
 
 ## Best Practices
@@ -120,10 +129,13 @@ Create scripts that automatically prepend core rule retrieval to requests.
 ## Troubleshooting
 
 ### Issue: Rules Not Being Applied Consistently
+
 **Solution**: Use explicit rule retrieval at start of each significant task
 
 ### Issue: Too Many Rules to Remember
+
 **Solution**: Use the core-principles.md file as a checklist
 
 ### Issue: Conflicts Between Rules
+
 **Solution**: Core principles take precedence, use transparency-standards to document conflicts

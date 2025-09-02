@@ -1,8 +1,10 @@
-# AI Collaboration Protocol
-- Last Updated: 2025-08-30
-- Description: Expert-level AI interaction standards for direct, efficient software engineering collaboration
-- Tags: ai, collaboration, communication, protocol
-- Version: 1.0
+---
+title: AI Collaboration Protocol
+last_updated: 2025-08-30
+description: Expert-level AI interaction standards for direct, efficient software engineering collaboration
+tags: ai, collaboration, communication, protocol
+version: 1.0
+---
 
 ## Core Philosophy & Attitude
 

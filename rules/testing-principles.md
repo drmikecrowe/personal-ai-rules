@@ -1,9 +1,10 @@
-# Testing - Core Principles
-- Last Updated: 2025-08-30
-- Description: Core principles of testing: write testable code, comprehensive tests, no temporary scripts.
-- Tags: testing
-- Version: 1.0
-
+---
+title: Testing - Core Principles
+last_updated: 2025-08-30
+description: Core principles of testing: write testable code, comprehensive tests, no temporary scripts.
+tags: testing
+version: 1.0
+---
 
 ## Core Testing Principles
 
@@ -14,12 +15,15 @@
 ## Testing Standards
 
 ### Permanent Tests Only
+
 **In projects with an existing test suite, you MUST create permanent, high-quality unit tests.**
+
 - No temporary or one-off validation scripts that are intended to be deleted
 - Extend existing test files for related functionality
 - Create new, properly-named test files for new functionality
 
 ### Test Quality Requirements
+
 - **Extend and Create**: Add test cases to existing files for related functionality
 - **Proper Naming**: Use clear, descriptive test file and test case names
 - **Verify Changes**: After making changes, run the test suite to verify nothing has been broken

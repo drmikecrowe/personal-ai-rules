@@ -50,13 +50,15 @@ To use these rules with the agent-rules-mcp server, configure your MCP client:
 ## Core Principles System
 
 ### Always-Apply Rules
+
 Some rules should be applied in every interaction. Start each session with:
 
 ```
-@get_rules core-principles,code-review-process,problem-solving-heuristics,transparency-standards,ai-collaboration-protocol,silent-execution-protocol,documentation-workflow,testing-principles,clean-code
+@get_rules core-principles,code-review-process,problem-solving-heuristics,transparency-standards,ai-collaboration-protocol,silent-execution-protocol,documentation-workflow,testing-principles,clean-code,content-policy
 ```
 
 ### Potential Rules
+
 Special-purpose rules that require explicit activation:
 
 ```
@@ -67,38 +69,44 @@ Special-purpose rules that require explicit activation:
 ```
 
 ### Rule Hierarchy
-1. **Core Principles** - Always apply (9 fundamental rules)
+
+1. **Core Principles** - Always apply (10 fundamental rules)
 2. **Potential Rules** - Apply when specific capabilities needed (security-first, tasksync-feedback)
-3. **Domain Rules** - Apply based on technology (react-*, typescript-*, etc.)
+3. **Domain Rules** - Apply based on technology (react-_, typescript-_, etc.)
 4. **Project Rules** - Apply for specific project contexts
 
 ## Usage Examples
 
 ### Standard Development Session
+
 ```bash
 # Core principles + domain rules
-@get_rules core-principles,react-component-design,typescript-best-practices
+@get_rules core-principles,taskflow-planning,taskflow-feedback
 ```
 
 ### Security-Critical Development
+
 ```bash
 # Core + security for auth/API work
 @get_rules core-principles,security-first,amplify-backend-implementation,typescript-best-practices
 ```
 
 ### Collaborative Development Session
+
 ```bash
 # Core + continuous feedback for iterative work
 @get_rules core-principles,tasksync-feedback,effect-core-principles,react-component-design
 ```
 
 ### Performance-Focused Development
+
 ```bash
 # Core + performance for optimization work
 @get_rules core-principles,performance-optimization,react-performance-optimization,typescript-best-practices
 ```
 
 ### Maximum Coverage Session
+
 ```bash
 # Everything: core + potential + domain
 @get_rules core-principles,security-first,performance-optimization,tasksync-feedback,react-component-design,typescript-best-practices
@@ -119,17 +127,21 @@ Each rule file should follow this structure:
 
 ```markdown
 # Rule Title
+
 - Last Updated: YYYY-MM-DD
 - Description: Brief description of the rules
 - Version: X.X
 
 ## Overview
+
 Brief overview of what this rule covers.
 
 ## Guidelines
+
 Specific guidelines and best practices.
 
 ## Examples
+
 Code examples demonstrating the rules.
 ```
 
