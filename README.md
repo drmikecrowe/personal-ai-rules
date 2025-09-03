@@ -1,22 +1,29 @@
 # Personal AI Rules Repository
 
-This repository contains my personal coding rules, standards, and guidelines for use with AI coding assistants through the [agent-rules-mcp](https://github.com/4regab/agent-rules-mcp) server.
+This repository contains my personal coding rules, standards, and guidelines for use with AI coding assistants through the [agent-rules-mcp](httpss://github.com/4regab/agent-rules-mcp) server.
 
 ## Structure
 
 ```
 personal-ai-rules/
-├── rules/                     # Main rules directory
-│   ├── general/              # General coding principles
-│   ├── languages/            # Language-specific rules
-│   ├── frameworks/           # Framework-specific guidelines
-│   ├── architecture/         # Architecture and design patterns
-│   ├── security/            # Security best practices
-│   ├── testing/             # Testing guidelines
-│   └── workflow/            # Development workflow rules
-├── templates/               # Code templates and scaffolds
-├── examples/               # Example implementations
-└── docs/                  # Additional documentation
+├── rules/
+│   ├── core-rules.md
+│   ├── core-ai-collaboration-protocol.md
+│   ├── ... (other core rules)
+│   ├── amplify.md
+│   ├── effect.md
+│   ├── performance.md
+│   ├── react.md
+│   ├── react-architecture.md
+│   ├── react-cva.md
+│   ├── tailwind.md
+│   ├── tailwind-cva.md
+│   ├── typescript.md
+│   ├── workflow-api-documentation.md
+│   ├── ... (other workflow rules)
+│   └── xstate.md
+├── docs/
+└── ...
 ```
 
 ## Usage with MCP
@@ -41,108 +48,97 @@ To use these rules with the agent-rules-mcp server, configure your MCP client:
 }
 ```
 
-## Available Commands
+## Rule System
 
-- **List Rules**: `@list_rules` - Shows all available rule domains
-- **Get Rules**: `@get_rules domain-name` - Retrieves specific rule content
-- **Get Multiple**: `@get_rules domain1,domain2` - Retrieves multiple rules
+This repository is organized into a `core` set of rules and several domains for different technologies and workflows.
 
-## Core Principles System
+### Core Rules
 
-### Always-Apply Rules
+The `core-rules.md` file defines the set of rules that should be applied in every interaction. These are the fundamental principles for working on any project.
 
-Some rules should be applied in every interaction. Start each session with:
+To get all core rules, you can use:
 
 ```
-@get_rules core-principles,code-review-process,problem-solving-heuristics,transparency-standards,ai-collaboration-protocol,silent-execution-protocol,documentation-workflow,testing-principles,clean-code,content-policy
+@get_rules core-rules
 ```
 
-### Potential Rules
+This will fetch all the rules referenced in `core-rules.md`.
 
-Special-purpose rules that require explicit activation:
+### Domain Rules
 
-```
-@get_rules security-first         # 🔒 OWASP security guidelines
-@get_rules tasksync-feedback      # 🔄 Continuous feedback loops
-@get_rules performance-optimization # 🐐 Performance optimization best practices
-@get_rules security-first,performance-optimization  # Multiple together
-```
+The repository also contains several domain-specific rules for different technologies and workflows. These can be fetched on demand.
 
-### Rule Hierarchy
-
-1. **Core Principles** - Always apply (10 fundamental rules)
-2. **Potential Rules** - Apply when specific capabilities needed (security-first, tasksync-feedback)
-3. **Domain Rules** - Apply based on technology (react-_, typescript-_, etc.)
-4. **Project Rules** - Apply for specific project contexts
+- **`amplify`**: AWS Amplify Gen 2 backend rules.
+- **`effect`**: Effect-TS service pattern.
+- **`performance`**: Performance optimization best practices.
+- **`react`**: General React best practices.
+- **`react-architecture`**: Architectural patterns for React projects using XState and Effect.
+- **`react-cva`**: Patterns for creating component APIs with CVA in React projects.
+- **`tailwind`**: Tailwind CSS best practices.
+- **`tailwind-cva`**: Best practices for using CVA with Tailwind CSS.
+- **`typescript`**: TypeScript best practices.
+- **`workflow`**: Various workflow rules (api-documentation, search-tools, etc.).
+- **`xstate`**: XState usage and patterns.
 
 ## Usage Examples
 
-### Standard Development Session
+### Standard Frontend Development
 
-```bash
-# Core principles + domain rules
-@get_rules core-principles,taskflow-planning,taskflow-feedback
+For a standard frontend development session using React, TypeScript, and Tailwind CSS:
+
+```
+@get_rules core-rules,react,typescript,tailwind
 ```
 
-### Security-Critical Development
+### Frontend Development with CVA
 
-```bash
-# Core + security for auth/API work
-@get_rules core-principles,security-first,amplify-backend-implementation,typescript-best-practices
+If the project uses CVA for component variants:
+
+```
+@get_rules core-rules,react,typescript,tailwind,tailwind-cva,react-cva
 ```
 
-### Collaborative Development Session
+### Full-Stack Development with Amplify and Effect
 
-```bash
-# Core + continuous feedback for iterative work
-@get_rules core-principles,tasksync-feedback,effect-core-principles,react-component-design
+For a full-stack development session with Amplify, Effect, React, and TypeScript:
+
+```
+@get_rules core-rules,amplify,effect,react,react-architecture,typescript,tailwind
 ```
 
-### Performance-Focused Development
+### Performance Optimization
 
-```bash
-# Core + performance for optimization work
-@get_rules core-principles,performance-optimization,react-performance-optimization,typescript-best-practices
+When focusing on performance optimization:
+
 ```
-
-### Maximum Coverage Session
-
-```bash
-# Everything: core + potential + domain
-@get_rules core-principles,security-first,performance-optimization,tasksync-feedback,react-component-design,typescript-best-practices
+@get_rules core-rules,performance,react,typescript
 ```
 
 ## Contributing to This Repository
 
 When adding new rules:
 
-1. Use descriptive, kebab-case filenames
-2. Include metadata in the header
-3. Follow the recommended structure
-4. Test locally before committing
+1. Use descriptive, kebab-case filenames.
+2. Include metadata in the header.
+3. Follow the recommended structure.
+4. Test locally before committing.
 
 ## Rule Format
 
 Each rule file should follow this structure:
 
 ```markdown
-# Rule Title
+---
+title: Rule Title
+last_updated: YYYY-MM-DD
+description: Brief description of the rules
+tags: tag1, tag2
+version: X.X
+---
 
-- Last Updated: YYYY-MM-DD
-- Description: Brief description of the rules
-- Version: X.X
+## Section Title
 
-## Overview
-
-Brief overview of what this rule covers.
-
-## Guidelines
-
-Specific guidelines and best practices.
-
-## Examples
-
-Code examples demonstrating the rules.
+-   Rule content...
 ```
 
 ## License

@@ -10,4 +10,3 @@ version: 1.0
 - Always use pnpm to execute package.json scripts
 - Always use pnpm to add or remove packages from packages.json
 - Always use pnpm to execute package.json scripts
-- NEVER, EVER try and start development servers such as pnpm dev/pnpm start/pnpm serve

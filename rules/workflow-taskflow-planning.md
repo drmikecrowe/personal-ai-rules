@@ -1,39 +1,23 @@
 ---
 title: Use planning
-last_updated: 2025-08-30
+last_updated: 2025-09-03
 description: When you need to plan multiple steps to complete a process or you have any complex dependencies.
 tags: meta planning
-version: 1.0
+version: 1.1
 ---
 
-When managing tasks or projects, use the TaskFlow MCP tools to create a structured workflow. Follow these guidelines:
+## Workflow
 
-1. PLANNING PHASE:
-
-   - When starting a new project or complex task, use the 'plan_task' tool to break it down into manageable tasks.
-   - Include subtasks for complex tasks to make them more manageable.
-   - Each task should include the following dependencies:
-     - Read `memory-bank/AGENTS.md`
-     - Review `memory-bank/project-rules/*`
-   - Add project dependencies and notes about user preferences or requirements.
-   - Use absolute paths when exporting task plans (e.g., "C:/Users/username/Documents/task-plan.md").
-
-2. EXECUTION PHASE:
-
-   - Always use 'get_next_task' to retrieve the next pending task.
-   - If a task has subtasks, complete and mark each subtask as done using 'mark_subtask_done' before marking the main task as done.
-   - After completing a task, use 'mark_task_done' and provide detailed completion notes.
-   - IMPORTANT: After marking a task as done, wait for user approval before proceeding to the next task.
-   - Use 'export_task_status' periodically to save the current state of all tasks for reference.
-
-3. DOCUMENTATION:
-
-   - Add notes using 'add_note' when the user mentions important preferences or requirements.
-   - Track dependencies with 'add_dependency' when specific tools or libraries are needed.
-   - Update task details as needed using 'update_task' or 'update_subtask'.
-
-4. COMPLETION:
-   - After all tasks are completed and approved, inform the user that the project is complete.
-   - Offer to export a final status report using 'export_task_status'.
-
-Always maintain a structured approach to task management, and keep the user informed about progress.
+1. **Planning**:
+    - Use `plan_task` to break down complex tasks.
+    - Include subtasks and dependencies (`AGENTS.md`, `project-rules/*`).
+2. **Execution**:
+    - Use `get_next_task` to get the next task.
+    - Mark subtasks and tasks as done (`mark_subtask_done`, `mark_task_done`).
+    - **IMPORTANT**: Wait for user approval after each task.
+3. **Documentation**:
+    - Use `add_note` for user preferences.
+    - Use `add_dependency` for tools/libraries.
+4. **Completion**:
+    - Inform the user when the project is complete.
+    - Offer to export a final status report.
