@@ -11,7 +11,7 @@ version: 1.4
 - **Automation**:
   - `@get_rules core-no-dev-servers`: Do not start development servers.
 - **Process**:
-  - `@get_rules core-code-review-process`: Internal quality review.
+  - `@get_rules core-code-review`: Internal quality review.
   - `@get_rules core-problem-solving-heuristics`: Systematic debugging.
   - `@get_rules core-transparency-standards`: State assumptions and gaps.
 - **AI Collaboration**:
